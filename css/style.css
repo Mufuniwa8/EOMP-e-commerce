@@ -1,0 +1,23 @@
+.bg-img {
+    background-image: url(https://i.postimg.cc/qgVrfBJC/Football-pitch-maintenance-Stirling-Albion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    max-width: 100%;
+}
+.header {
+    /* justify-content: center;  */
+    margin-top: 10%;
+    
+     margin-right: 50%;
+     font-family: 'Montserrat', sans-serif;
+     text-align: center;
+    /* color: white;
+    font-family: ;
+    text-align: center; */
+} 
+.footer {
+    text-align: center;
+    color: white;
+}
