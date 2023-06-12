@@ -1,66 +1,189 @@
 .bg-img {
-    background-image: url(https://i.postimg.cc/qgVrfBJC/Football-pitch-maintenance-Stirling-Albion.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
-    max-width: 100%;
+  background-image: url(https://i.postimg.cc/qgVrfBJC/Football-pitch-maintenance-Stirling-Albion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  max-width: 100%;
+}
+
+.home-img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  /* justify-content: center; */
+  /* display: flex; */
+  border-radius: 8%;
+  transition: 1s;
+}
+.home-img:hover {
+  /* transform: scale3d(1.5); */
+  /* -webkit-transform: scale(); */
+  /* -ms-transform: scale(1.5); */
+  width: 300px;
+  height: 300px;
+}
+.home-img-div p {
+  opacity: 0;
+  margin-top: 5px;
+}
+.home-img-div:hover p {
+  opacity: 1;
+}
+.text {
+  margin-top: 8rem;
 }
 .header {
-    /* justify-content: center;  */
-    margin-top: 10%;
-    justify-content: center;
-    text-align: center;
-     margin-right: 50%;
-     font-family: 'Montserrat', sans-serif;
-     text-align: center;
-    /* color: white;
+  /* justify-content: center;  */
+  /* margin-top: 10%; */
+  /* justify-content: center; */
+  text-align: center;
+  color: white;
+  margin-right: 50%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-shadow: 3px 2px blue;
+  /* color: white;
     font-family: ;
     text-align: center; */
-} 
-.footer {
-    text-align: center;
-    color: white;
 }
- .bod {
-    background-color: rgba(255, 255, 255, 0.452);
-    position: fixed;
-    height: 70%;
-    
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 1s;
-
-} 
+.footer {
+  text-align: center;
+  color: white;
+}
+.bod {
+  background-color: rgba(255, 255, 255, 0.452);
+  position: fixed;
+  height: 70%;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 1s;
+}
 .pro {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  text-align: center;
 }
 .container {
-    display: grid;
-    width: 250px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  width: 250px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
 }
 .pro-imgs {
-    object-fit: cover;
-    width: 200px;
-    height: 200px;
-    /* row-gap: rem; */
-    display: flex;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  /* row-gap: rem; */
+  display: flex;
 }
 .pro-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+  padding: 30px;
 }
 .border {
-    border: white solid 5px;
-    border-radius: 8px;
-    
+  border: 2px solid white;
+  border-radius: 8px;
 }
+.button {
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  transition: 1s;
+}
+.button:hover {
+  transition: 1s;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+/* .button:hover {
+    transform: 0.1s;
+    background-color: aliceblue;
+} */
+.h1 {
+  border: 2px solid rgba(0, 0, 0, 0.358);
+  border-radius: 8px;
+  margin: 50px;
+}
+/* .h4 {
+    color: white;
+} */
+.contact {
+  /* justify-content: center; */
+  /* align-items: center; */
+  display: grid;
+  gap: 2rem;
+  border: 2px solid white;
+  padding: 2rem;
+  margin: 2rem;
+  margin-top: 2rem;
+  /* background-color: none; */
+  border-radius: 8px;
+  width: 500px;
+  margin-left: 30%;
+}
+.contact-input {
+  gap: 2rem;
+  background-color: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.input {
+  border-radius: 8px;
+  box-shadow: rgba(128, 128, 128, 0.556) 5px 5px;
+  border: 0.5rem solid white;
+}
+.message {
+  width: 300px;
+  height: 150px;
+  box-shadow: rgba(128, 128, 128, 0.556) 5px 5px;
+  border-radius: 8px;
+  border: 0.5rem solid white;
+  /* justify-content: center;
+    align-items: center;
+    display: inline; */
+}
+.sub-button {
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background-color: grey;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(128, 128, 128, 0.556) 5px 5px;
+}
+.brand-logo {
+  width: 5rem;
+  object-fit: cover;
+  color: white;
+}
+.header-contact {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-shadow: 3px 2px blue;
+}
+.about-img {
+    object-fit: cover;
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    display: grid;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.464);
+}
+.about-text {
+    margin: 2px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+

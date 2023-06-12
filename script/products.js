@@ -35,6 +35,7 @@ let boots = [
 let displayBoots = document.getElementById('boots');
 boots.forEach((data) => {
     displayBoots.innerHTML += `
+    
     <div class="container">
     
     <div class="checkOut">
@@ -51,13 +52,23 @@ boots.forEach((data) => {
     <div class="price"
     <h2>Price: R${data.price}</h2>
     </div>
-    <div class="button">
-     <button onclick="addToList">Add to list</button>
+    <div>
+     <button class="button" onclick="addToList">Add to Cart</button>
     </div>
     </div>
     
     </div>
     `;
+//     let dispEducation = document.querySelector("education");
+// education.forEach((data) => {
+//   dispEducation.innerHTML += `
+// <div class="card-body2">
+//     <h4 class="display-5 year text-center">${data.year}</h4>
+//     <h4 class="display-10 ">${data.desc}</h4>
+//     </div>
+//     </div>    
+//     </div>`;
+
 });
 
 // array of t-shirts
@@ -65,36 +76,37 @@ let shirts = [
     {
         id: 5,
         image: "https://i.postimg.cc/HnVYTGpH/4828f51080cbd235e634a477bfe47beb.webp",
-        brand: "nike",
-        model: "",
-        price:  3700,
+        brand: "Puma",
+        model: "AC Milan kit",
+        price:  1700,
     },
     {
         id: 6,
         image: "https://i.postimg.cc/K8tN22Py/HZ2133-01-laydown-removebg-preview.png",
         brand: "Adidas",
-        model: "",
-        price:  4000,
+        model: "Arsenal kit",
+        price:  1500,
     },
     {
         id: 7,
         image: "https://i.postimg.cc/4d5DJ09W/Juventus-New-Home-Jersey-2023-24-with-Yellow-removebg-preview.png",
         brand: "adidas",
-        model: "",
-        price:  3200,
+        model: "Juventas Kit",
+        price:  1500,
     },
     {
         id: 8,
         image: "https://i.postimg.cc/L5F3b4X7/images-removebg-preview.png",
-        brand: "nike",
-        model: "",
-        price:  3000,
+        brand: "Castore",
+        model: "Newcastle kit",
+        price:  1000,
     },
 ];
 
 let displayShirts = document.getElementById('shirts');
 shirts.forEach((data) => {
     displayShirts.innerHTML += `
+    
     <div class="container">
     
     <div class="checkOut">
@@ -111,8 +123,8 @@ shirts.forEach((data) => {
     <div class="price"
     <h2>Price: R${data.price}</h2>
     </div>
-    <div class="button">
-     <button onclick="addToList">Add to list</button>
+    <div>
+     <button class="button" onclick="addToList">Add to Cart</button>
     </div>
     </div>
     
@@ -174,8 +186,8 @@ balls.forEach((data) => {
     <div class="price"
     <h2>Price: R${data.price}</h2>
     </div>
-    <div class="button">
-     <button onclick="addToList">Add to list</button>
+    <div>
+     <button class="button" onclick="addToList">Add to Cart</button>
     </div>
     </div>
     

@@ -18,47 +18,53 @@
         <div class="bg-img">
 
         <!-- nav bar -->
-
-        <nav class="navbar navigation navbar-dark ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Boots 007</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-dark"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body bod">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+        <nav class="navbar navbar-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Boots 007</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon bg-dark"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li> -->
+                  <li class="nav-item">
+                      <a class="nav-link active" href="/index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="/pages/about.html">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/pages/about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Products
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-light">
+                          <li><a class="dropdown-item " href="/pages/products.html">Shop</a></li>
+                          <li><a class="dropdown-item " href="/pages/checkout.html">Checkout</a></li>
+                          <li><a class="dropdown-item " href="/pages/admin.html">admin</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="/pages/contact.html">contact Us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li><a class="dropdown-item " href="/pages/products.html">Shop</a></li>
-                            <li><a class="dropdown-item " href="/pages/checkout.html">Checkout</a></li>
-                            <li><a class="dropdown-item " href="/pages/admin.html">admin</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/pages/contact.html">contact Us</a>
-                      </li>
-                  </ul>
-          </nav>
+                </ul>
+        </nav>
 
           <!-- end of nav bar -->
 <!-- products section -->
        <div class="pro">
         <h1>Products</h1>
+        <h1 class="h1">Football Cleats</h1>
             <div id="boots" class="pro-col"></div>
+            <h1 class="h1">Football Shirts</h1>
             <div id="shirts" class="pro-col"></div>
+            <h1 class="h1">Footballs</h1>
             <div id="balls" class="pro-col"></div>
         </div>
         <!-- end of products section  -->
@@ -70,7 +76,14 @@
     <br><br>
     <footer class="p-2 bg-dark text-bg-light w-100">
       <div class="footer">
-        &copy.Made by M.Mbedzi <a href="">mufuniwambedzi@gmail.com</a> 
+        &copy.Made by M.Mbedzi <a href="">mufuniwambedzi@gmail.com</a>
+        <div>
+          <a href=""><i class="fa-brands fa-twitter" style="color: white;"></i></a>
+          <a href=""><i class="fa-solid fa-phone" style="color: #e8eaed;"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in" style="color: #e8eaed;"></i>
+
+        </div>
+        </a>
       </div>
     </footer>
     <script
@@ -79,5 +92,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/script/products.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </body>
 </html>
