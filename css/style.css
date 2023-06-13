@@ -183,7 +183,46 @@
     margin: 2px;
     padding: 10px;
     color: white;
+    /* text-shadow: 3px 3px blue; */
     border: 2px solid white;
     border-radius: 8px;
+}
+.admin-products {
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 5px;
+  height: 50px;
+}
+.big-div {
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+.table-row {
+  border: 2px solid white;
+  margin-left: 70px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.table-div {
+   justify-content: center;
+  align-items: center; 
+  /* margin-left: 30px; */
+  text-align: center;
+  gap: 5px;
+  /* width: 50px; */
+  width: 80%;
+  margin: 5px;
+}
+.table-head {
+  gap: 50px;
+  width: 50px;
+}
+.admin-img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
 }
 

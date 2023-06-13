@@ -1,4 +1,3 @@
-// const checkOut = document.getElementById(".nav_bar");
 
 
 let boots = [
@@ -34,6 +33,8 @@ let boots = [
 
 let displayBoots = document.getElementById('boots');
 boots.forEach((data) => {
+    let {id, image, brand, model, price} = boots;
+    let displayBoots = document.getElementById("boots");
     displayBoots.innerHTML += `
     
     <div class="container">
@@ -53,7 +54,7 @@ boots.forEach((data) => {
     <h2>Price: R${data.price}</h2>
     </div>
     <div>
-     <button class="button" onclick="addToList">Add to Cart</button>
+     <button id="add" class="button" onclick="addToList()">Add to Cart</button>
     </div>
     </div>
     
@@ -91,7 +92,7 @@ let shirts = [
         id: 7,
         image: "https://i.postimg.cc/4d5DJ09W/Juventus-New-Home-Jersey-2023-24-with-Yellow-removebg-preview.png",
         brand: "adidas",
-        model: "Juventas Kit",
+        model: "Juventus Kit",
         price:  1500,
     },
     {
@@ -105,6 +106,8 @@ let shirts = [
 
 let displayShirts = document.getElementById('shirts');
 shirts.forEach((data) => {
+    let {id, image, brand, model, price} = shirts;
+    let displayShirts = document.getElementById("shirts"); 
     displayShirts.innerHTML += `
     
     <div class="container">
@@ -124,7 +127,7 @@ shirts.forEach((data) => {
     <h2>Price: R${data.price}</h2>
     </div>
     <div>
-     <button class="button" onclick="addToList">Add to Cart</button>
+     <button id="add" class="button" onclick="addToList()">Add to Cart</button>
     </div>
     </div>
     
@@ -156,7 +159,7 @@ let balls = [
         image: "https://i.postimg.cc/c4T2NdT8/La-Liga-22-23-new-ball-1.jpg",
         brand: "Puma",
         model: "2022/23 La liga Ball",
-        price:  4500,
+        price:  450,
     },
     {
         id: 12,
@@ -169,6 +172,8 @@ let balls = [
 
 let displayBalls = document.getElementById('balls');
 balls.forEach((data) => {
+    let {id, image, brand, model, price} = balls;
+    let displayBalls = document.getElementById("balls");
     displayBalls.innerHTML += `
     <div class="container">
     
@@ -187,13 +192,40 @@ balls.forEach((data) => {
     <h2>Price: R${data.price}</h2>
     </div>
     <div>
-     <button class="button" onclick="addToList">Add to Cart</button>
+     <button class="button" onclick="addToList()">Add to Cart</button>
     </div>
     </div>
     
     </div>
     `;
+
 });
+
+ let array = []
+ array.push(balls, shirts, boots)
+
+
+// function addToLocalStorage(){
+//     localStorage.setItem("data", displayId.innerHTML);
+// }
+
+const addToList = document.querySelector('data') 
+function addTolist()  {
+    if (add((data) => data.id == id)) {
+        changeNumberOfUnits("+", add);
+    }
+    else {
+        let array = add.find((array) => array.id == add);
+        data.push({
+            boots, shits, balls,
+            numberOfUnits: 1,
+        });
+    }
+    updateList
+    console.log(addToList)
+};
+
+
 
 
     //  end of array of soccer balls
