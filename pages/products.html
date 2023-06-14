@@ -21,6 +21,48 @@
         <nav class="navbar navbar-dark ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Boots 007</a>
+            
+            <!-- bootstrap -->
+             <button onclick="cart()" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-plus"></i>
+            </button>
+    
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"><h2 class="products">Your Cart</h2></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              
+                <div class="checkout-container">
+                  <div>
+                    
+                  <!-- <button class="del-button" id="delete">Clear cart</button> -->
+                  </div>
+                  <div id="array"></div>
+                  <!-- <div class="checkout-products">
+                    <div class="img-products">
+                      <img id="pro-img" class="img-size" src="https://i.postimg.cc/HnVYTGpH/4828f51080cbd235e634a477bfe47beb.webp" alt="">
+                    </div>
+                    <div class="titles">
+                      <h2 class="brand">Laptop</h2>
+                      <br>
+                      <h4 class="model">asdf</h4>
+                    </div>
+                    <div class="add">
+                      <div class="add-btn">+</div>
+                      <div class="value">num</div>
+                      <div class="add-btn">-</div>
+                    </div>
+                    <div class="product-price">
+                      <div class="price">345</div>
+                      <div class="can"><i class="fa-solid fa-trash-can" style="color: black"></i></div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+             
+            <!-- end of cart -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon bg-dark"></span>
             </button>
@@ -55,6 +97,9 @@
                     </li>
                 </ul>
         </nav>
+        <!-- start of cart -->
+
+        <!-- end of cart -->
 
           <!-- end of nav bar -->
 <!-- products section -->
@@ -92,6 +137,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/script/products.js"></script>
+    <script src="/script/cart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </body>
 </html>

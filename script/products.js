@@ -102,6 +102,7 @@ let shirts = [
         model: "Newcastle kit",
         price:  1000,
     },
+    
 ];
 
 let displayShirts = document.getElementById('shirts');
@@ -175,6 +176,8 @@ balls.forEach((data) => {
     let {id, image, brand, model, price} = balls;
     let displayBalls = document.getElementById("balls");
     displayBalls.innerHTML += `
+
+    
     <div class="container">
     
     <div class="checkOut">
@@ -200,30 +203,37 @@ balls.forEach((data) => {
     `;
 
 });
+// let addToList = = []
+//     array.push("boots", "shirts", "balls")
 
- let array = []
- array.push(balls, shirts, boots)
+
+//  let array = []
+//  array.push("balls", "shirts", "boots")
 
 
-// function addToLocalStorage(){
-//     localStorage.setItem("data", displayId.innerHTML);
+// function addToList(boots){
+//     let {id, image, brand, model, price} = boots;
 // }
 
-const addToList = document.querySelector('data') 
-function addTolist()  {
-    if (add((data) => data.id == id)) {
-        changeNumberOfUnits("+", add);
-    }
-    else {
-        let array = add.find((array) => array.id == add);
-        data.push({
-            boots, shits, balls,
-            numberOfUnits: 1,
-        });
-    }
-    updateList
-    console.log(addToList)
-};
+//  function addToLocalStorage(addToList);{
+//  localStorage.setItem("data", displayId.innerHTML);
+//  }
+
+// const addToList = document.querySelector('data') 
+// function addTolist()  {
+//     if (add((data) => data.id == id)) {
+//         changeNumberOfUnits("+", add);
+//     }
+//     else {
+//         let array = add.find((array) => array.id == add);
+//         data.push({
+//             boots, shits, balls,
+//             numberOfUnits: 1,
+//         });
+//     }
+//     updateList
+//     console.log(addToList)
+// };
 
 
 
