@@ -2,64 +2,149 @@
 //  function addToList(boots, shirts, balls){
 
 //  }
+const bootsEl = document.querySelector("#boots");
+const productItems = document.querySelector("#shop");
 
-let cart = JSON.parse(localStorage.getItem("cart"));
-if (!cart) {
-  cart = [];
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
+// function renderBoots(){
+//   boots.forEach((boots, shirts, balls) =>{
+// bootsEl.innerHTML += `
 
-// Shopping cart
-function updateCart() {
-  const cartElement = document.getElementById("cart");
-  cart.forEach((product) => {
-    const cartItem = document.createElement("div");
-    cartItem.innerHTML = `
-    
-    <ul class="list-group mb-3">
-    <li class="list-group-item d-flex justify-content-between lh-sm">
-    <div>
-    <h6 class="my-0">${product.model}</h6>
-    <small class="text-body-secondary">${product.brand}</small>
-    </div>
-    <span class="text-body-secondary">R ${product.price}</span>
-    <button onclick= "calc(${product.price})"></button>
-    </li>
+// function updateCart() {
+//   const cartElement = document.getElementById("shop");
+//   cartElement = ""
+//   ;
+//   shop.forEach((boots) => {
+//     const cartItem = document.createElement("div");
+//     productItem.innerHTML += `
+// <div class="checkout-products">
+// <div class="img-products">
+//   <img id="pro-img" class="img-size" src="${boots.image}" alt="">
+// </div>
+// <div class="titles">
+//   <h2 class="brand">${boots.brand}</h2>
+//   <br>
+//   <h4 class="model">${boots.model}</h4>
+// </div>
+// <div class="add">
+//   <div class="add-btn">+</div>
+//   <div class="value">num</div>
+//   <div class="add-btn">-</div>
+// </div>
+// <div class="product-price">
+//   <span class="price">${boots.price}</span>
+//   <button onclick= "calc(${boots.price})"></button>
+//   <div class="can"><i class="fa-solid fa-trash-can" style="color: black"></i></div>
+// </div>
+// </div>
+// `;
 
-    </ul>
-    `;
+//   });
+// }
 
-    cartElement.appendChild(cartItem);
+//  function renderBoots(){
+//    boots.forEach((boots, shirts, balls) =>{
+// bootsEl.innerHTML +=
+// const shop = [];
+renderShop()
+function renderShop(){
+  // productItems.innerHTML = '';
+  productItems.innerHTML = ''
+  cart.forEach((item) => {
+      productItems.innerHTML += `
+        <div id="shop" class="checkout-products">
+        
+          <div class="img-products">
+            <img id="pro-img" class="img-size" src="${item.image}" alt="">
+          </div>
+          <div class="titles">
+            <h2 class="brand">${item.brand}</h2>
+            <br>
+            <h4 class="model">${item.model}</h4>
+          </div>
+          <div class="add">
+            <div class="add-btn">+</div>
+            <div class="value">${item.value}</div>
+            <div class="add-btn">-</div>
+          </div>
+          <div class="product-price">
+            <div class="price-cart">${item.price}</div> 
+            <button onclick="clearItem(${item.id})" class="can"><i class="fa-solid fa-trash-can" style="color: black"></i></button>
+          </div>
+          
+        </div>
+      `
   });
 }
 
-// Function to save cart to localStorage
-const saveCartToLocalStorage = () => {
-  localStorage.setItem("cart", JSON.stringify(cart));
-};
+// let boots = JSON.parse(localStorage.getItem("cart"));
+// if (!cart) {
+//   cart = [];
+//   localStorage.setItem("cart", JSON.stringify(cart));
+// }
 
-// Function to retrieve cart from localStorage (if available)
-const retrieveCartFromLocalStorage = () => {
-  if (localStorage.getItem("cart")) {
-    cart = JSON.parse(localStorage.getItem("cart"));
-    cart.forEach((product) => {
-      updateCart(product); 
-    });
-  }
-};
+// // Shopping cart
+// function updateCart() {
+//   const cartElement = document.getElementById("shop");
+//   shop.forEach((product) => {
+//     const cartItem = document.createElement("div");
+//     cartItem.innerHTML = `
+    
 
-function addToCart(productId) {
-  const product = products.find((product) => product.id === productId);
-  if (product) {
-    cart.push(product);
-    product.quantity++;
-    saveCartToLocalStorage();
-    updateCart();
-  }
-}
+{/* <div class="checkout-products">
+<div class="img-products">
+  <img id="pro-img" class="img-size" src="${boots.image}" alt="">
+</div>
+<div class="titles">
+  <h2 class="brand">${boots.brand}</h2>
+  <br>
+  <h4 class="model">${boots.model}</h4>
+</div>
+<div class="add">
+  <div class="add-btn">+</div>
+  <div class="value">num</div>
+  <div class="add-btn">-</div>
+</div>
+<div class="product-price">
+  <span class="price">${boots.price}</span>
+  <button onclick= "calc(${boots.price})"></button>
+  <div class="can"><i class="fa-solid fa-trash-can" style="color: black"></i></div>
+</div>
+</div>
+//  */}
 
-retrieveCartFromLocalStorage();
-updateCart();
+//     `;
+
+//     cartElement.appendChild(cartItem);
+//   });
+// }
+
+// // Function to save cart to localStorage
+// const saveCartToLocalStorage = () => {
+//   localStorage.setItem("cart", JSON.stringify(cart));
+// };
+
+// // Function to retrieve cart from localStorage (if available)
+// const retrieveCartFromLocalStorage = () => {
+//   if (localStorage.getItem("cart")) {
+//     cart = JSON.parse(localStorage.getItem("cart"));
+//     cart.forEach((boots) => {
+//       updateCart(boots); 
+//     });
+//   }
+// };
+
+// function addToCart(productId) {
+//   const product = products.find((product) => product.id === productId);
+//   if (product) {
+//     cart.push(product);
+//     product.quantity++;
+//     saveCartToLocalStorage();
+//     updateCart();
+//   }
+// }
+
+// retrieveCartFromLocalStorage();
+// updateCart();
 
 //
 // let array = [];

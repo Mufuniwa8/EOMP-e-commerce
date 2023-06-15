@@ -23,7 +23,7 @@
             <a class="navbar-brand" href="#">Boots 007</a>
             
             <!-- bootstrap -->
-             <button onclick="cart()" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-plus"></i>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-plus"></i>
             </button>
     
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -33,13 +33,13 @@
               </div>
               <div class="offcanvas-body">
               
-                <div class="checkout-container">
-                  <div>
-                    
+                <div class="checkout-container" id>
+                  <div id="shop">
+                    <button onclick="clearAll()"></button>
                   <!-- <button class="del-button" id="delete">Clear cart</button> -->
                   </div>
-                  <div id="array"></div>
-                  <!-- <div class="checkout-products">
+                  <!-- <div id="shop"></div> -->
+                  <!-- <div id="shop" class="checkout-products">
                     <div class="img-products">
                       <img id="pro-img" class="img-size" src="https://i.postimg.cc/HnVYTGpH/4828f51080cbd235e634a477bfe47beb.webp" alt="">
                     </div>
@@ -76,24 +76,23 @@
                   <!-- <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li> -->
-                  <li class="nav-item">
+                  <li class="nav-item hover">
                       <a class="nav-link active" href="/index.html">Home</a>
                     </li>
-                  <li class="nav-item">
+                  <li class="nav-item hover">
                     <a class="nav-link active" href="/pages/about.html">About</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown hover">
                       <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Products
                       </a>
                       <ul class="dropdown-menu dropdown-menu-light">
-                          <li><a class="dropdown-item " href="/pages/products.html">Shop</a></li>
-                          <li><a class="dropdown-item " href="/pages/cart.html">Cart</a></li>
-                          <li><a class="dropdown-item " href="/pages/admin.html">admin</a></li>
+                          <li><a class="dropdown-item hover " href="/pages/products.html">Shop</a></li>
+                          <li><a class="dropdown-item hover " href="/pages/admin.html">admin</a></li>
                       </ul>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active" href="/pages/contact.html">contact Us</a>
+                      <a class="nav-link active hover" href="/pages/contact.html">contact Us</a>
                     </li>
                 </ul>
         </nav>
@@ -106,11 +105,14 @@
        <div class="pro">
         <h1>Products</h1>
         <h1 class="h1">Football Cleats</h1>
+        <div>
+          
+        </div>
             <div id="boots" class="pro-col"></div>
-            <h1 class="h1">Football Shirts</h1>
+             <h1 class="h1">Football Shirts</h1>
             <div id="shirts" class="pro-col"></div>
             <h1 class="h1">balls</h1>
-            <div id="balls" class="pro-col"></div>
+            <div id="balls" class="pro-col"></div> 
         </div>
         <!-- end of products section  -->
        </div>
